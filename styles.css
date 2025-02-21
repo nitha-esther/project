@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(125, 189, 129);
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -48,7 +48,7 @@ section {
 }
 
 #home {
-    background: #cb7fe0;
+    background: #976ea2;
     color: rgb(200, 112, 198);
     height: 100vh;
     display: flex;
@@ -67,7 +67,7 @@ section {
 }
 
 button {
-    background-color: #5f6368;
+    background-color: #bc5ca7;
     color: white;
     border: none;
     padding: 10px 20px;
