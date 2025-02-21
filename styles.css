@@ -48,8 +48,8 @@ section {
 }
 
 #home {
-    background: #1e1e1e;
-    color: white;
+    background: #e59bd6;
+    color: rgb(186, 144, 185);
     height: 100vh;
     display: flex;
     justify-content: center;
