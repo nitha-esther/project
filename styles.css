@@ -67,8 +67,8 @@ section {
 }
 
 button {
-    background-color: #bc5ca7;
-    color: white;
+    background-color: #8cc196;
+    color: rgb(103, 139, 110);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
