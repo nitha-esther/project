@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: #3c3c3c;
+    background-color: rgb(158, 124, 150)
 }
 
 #projects .project-card {
