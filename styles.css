@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #dfccde;
+    background-color: #cbf9e8;
     color: #000000;
     line-height: 1.6;
 }
@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(125, 189, 129);
+    color: rgb(170, 103, 149);
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -48,8 +48,8 @@ section {
 }
 
 #home {
-    background: #976ea2;
-    color: rgb(200, 112, 198);
+    background: #dcb0df;
+    color: rgb(159, 108, 158);
     height: 100vh;
     display: flex;
     justify-content: center;
