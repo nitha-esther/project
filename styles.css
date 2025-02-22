@@ -15,18 +15,30 @@ body {
 
 /* Navigation bar styling */
 /* Navigation bar styling */
+/* Navigation bar styling */
 nav {
     background-color: #333;
     padding: 10px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
+/* Container for the navigation to create the box effect */
+.nav-container {
+    background-color: #444;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Links within the navigation */
 .nav-links {
     display: flex;
     justify-content: center;
     gap: 40px;  /* Space between links */
 }
 
+/* Styling for the links */
 .nav-links a {
     text-decoration: none;
     color: #fff;
@@ -37,7 +49,7 @@ nav {
 }
 
 .nav-links a:hover {
-    background-color: #444;
+    background-color: #555;
     color: #f4f4f4;
 }
 
