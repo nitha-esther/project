@@ -98,5 +98,19 @@
             <button type="submit" class="btn">Send</button>
         </form>
     </section>
+    <script>
+        document.getElementById("queryToggle").addEventListener("change", function() {
+            const form = document.getElementById("queryForm");
+            form.style.display = this.checked ? "block" : "none";
+        });
+    
+        document.getElementById("queryForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const email = document.getElementById("userEmail").value;
+            const query = document.getElementById("userQuery").value;
+            window.location.href = `mailto:nishisheeba196@gmail.com?subject=Customer Query&body=Email: ${email}%0D%0AQuery: ${query}`;
+        });
+    </script>
+    
 </body>
 </html>
