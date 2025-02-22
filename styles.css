@@ -1,46 +1,41 @@
 /* Reset some default styles */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Body styling */
-body {
     font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #cbf9e8;
+    color: #000000;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Centering the navigation */
-.nav-container {
+header {
+    background: #eac7e5;
+    color: rgb(211, 170, 197);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    background: #333; /* Background color for visibility */
-    padding: 15px 0; /* Adds space inside the block */
-    width: 100%; /* Ensures full width */
+    justify-content: center;
+    list-style-type: none;
 }
 
-/* Styling navigation links */
-.nav-links {
-    display: flex;
-    gap: 20px; /* Adds space between links */
-    background: #444; /* Slightly different shade for visibility */
-    padding: 10px 20px; /* Padding around links */
-    border-radius: 10px; /* Rounded corners */
+nav ul li {
+    margin: 0 20px;
 }
 
-.nav-links a {
-    color: white;
+nav ul li a {
+    color: rgb(170, 103, 149);
     text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
+    font-size: 1.1rem;
 }
 
 /* Section styling */
