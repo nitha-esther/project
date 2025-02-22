@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of [Your Name]">
+    <title>[Your Name] - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1>Nitha Esther </h1>
+            <p>Hi, I'm [Your Name], a Web Developer and Designer.</p>
+            <button id="contactButton">Get in Touch</button>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with experience in HTML, CSS, JavaScript, and more. I love building intuitive, user-friendly websites.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Project One</h3>
+                <p>A brief description of the first project.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>A brief description of the second project.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>Follow me on:
+                <a href="https://github.com/yourgithub" target="_blank">GitHub</a> | 
+                <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
