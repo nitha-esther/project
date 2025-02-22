@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    background: #333;
+    background: #edede2;
     padding: 10px;
 }
 
@@ -17,7 +17,7 @@ nav {
 }
 
 .nav-container a {
-    color: white;
+    color: rgb(14, 14, 14);
     text-decoration: none;
     font-size: 18px;
 }
