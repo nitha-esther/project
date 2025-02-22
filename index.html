@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retail Store - Home</title>
+    <title>Retail Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,11 +14,33 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
-
+    
     <header>
         <h1>Welcome to Our Retail Store</h1>
         <p>Discover the best products at amazing prices.</p>
         <a href="products.html" class="btn">Shop Now</a>
     </header>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="images/product1.jpg" alt="Product 1">
+            <h2>Product Name 1</h2>
+            <p>Price: <span>$10 - $20</span></p>
+            <button class="buy-now" onclick="buyNow('Product Name 1')">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/product2.jpg" alt="Product 2">
+            <h2>Product Name 2</h2>
+            <p>Price: <span>$15 - $25</span></p>
+            <button class="buy-now" onclick="buyNow('Product Name 2')">Buy Now</button>
+        </div>
+    </section>
+    
+    <script>
+        function buyNow(productName) {
+            window.location.href = `mailto:nishisheeba196@gmail.com?subject=${encodeURIComponent(productName)}&body=Please attach media for this product.`;
+        }
+    </script>
 </body>
 </html>
