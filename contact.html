@@ -47,14 +47,14 @@
             transform: scale(1.1);
         }
         .toggle-switch {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
+            display: block;
+            margin: 20px auto;
         }
-
+        .toggle-switch input {
+            display: none;
+        }
         .toggle-switch .slider {
+            display: inline-block;
             width: 50px;
             height: 25px;
             background: #ddd;
@@ -63,40 +63,32 @@
             cursor: pointer;
             transition: 0.3s;
         }
-
-        .toggle-switch input {
-            display: none;
-        }
-
         .toggle-switch input:checked + .slider {
             background: #ff69b4;
         }
-
         .toggle-switch .slider::before {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: white;
-        border-radius: 50%;
-        top: 50%;
-        left: 3px;
-        transform: translateY(-50%);
-        transition: 0.3s;
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            top: 50%;
+            left: 3px;
+            transform: translateY(-50%);
+            transition: 0.3s;
         }
-
         .toggle-switch input:checked + .slider::before {
-        left: 27px;
+            left: 27px;
         }
-
         form {
             display: none;
             margin-top: 20px;
         }
         input, textarea {
             width: 100%;
-            padding: 20px;
-            margin: 20px 0;
+            padding: 10px;
+            margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
@@ -135,9 +127,8 @@
 
         <label class="toggle-switch">
             <input type="checkbox" id="queryToggle">
-            <span class="slider"></span> 
-            <span>Reach us!</span>
-        </label>        
+            <span class="slider"></span> Reach us!
+        </label>
 
         <form id="queryForm">
             <textarea id="userQuery" placeholder="Your Query" required></textarea>
