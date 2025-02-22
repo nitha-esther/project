@@ -14,29 +14,30 @@ body {
 }
 
 /* Navigation bar styling */
+/* Navigation bar styling */
 nav {
-    background-color: #000000;
+    background-color: #333;
     padding: 10px 0;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;  /* Space between links */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+.nav-links a {
     text-decoration: none;
-    color: #efe0e0;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 
-nav ul li a:hover {
+.nav-links a:hover {
+    background-color: #444;
     color: #f4f4f4;
 }
 
