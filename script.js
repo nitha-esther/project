@@ -1,7 +1,11 @@
-document.getElementById("themeToggle").addEventListener("change", function() {
-    if (this.checked) {
-        document.body.style.background = "#f8e8ee"; // Light pink theme
-    } else {
-        document.body.style.background = "#ffffff"; // Default white background
-    }
+document.getElementById("queryToggle").addEventListener("change", function() {
+    document.getElementById("queryForm").style.display = this.checked ? "block" : "none";
+});
+
+document.getElementById("queryForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const userEmail = document.getElementById("userEmail").value;
+    const userQuery = document.getElementById("userQuery").value;
+    
+    window.location.href = `mailto:nishisheeba196@gmail.com?subject=Customer Query&body=Email: ${userEmail}%0D%0AQuery: ${userQuery}`;
 });
