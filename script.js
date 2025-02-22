@@ -40,4 +40,6 @@ function generateProductList() {
 }
 
 // Call the function to generate the product list when the page loads
-window.onload = generateProductList;
+if (document.getElementById('product-list')) {
+    window.onload = generateProductList;
+}
