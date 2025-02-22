@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Retail Store - Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Retail Store - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation bar -->
-    <!-- Navigation bar -->
-<nav>
-    <div class="nav-container">
-        <div class="nav-links">
+    <nav>
+        <div class="nav-container">
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
             <a href="contact.html">Contact</a>
         </div>
-    </div>
-</nav>
+    </nav>
 
-
-    <!-- Contact Section -->
-    <section id="contact">
+    <section class="contact">
         <h2>Contact Us</h2>
-        <p>Email: nishisheeba196@gmail.com</p>
-        <p>Phone: 790</p>
-    </section>
+        <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+        <p><a href="https://wa.me/yourwhatsapplink" target="_blank">WhatsApp</a></p>
 
+        <label class="toggle-switch">
+            <input type="checkbox" id="queryToggle">
+            <span class="slider"></span> Post a Query
+        </label>
+
+        <form id="queryForm" style="display: none;">
+            <input type="email" id="userEmail" placeholder="Your Email" required>
+            <textarea id="userQuery" placeholder="Your Query" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
 </html>
