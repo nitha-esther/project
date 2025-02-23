@@ -6,6 +6,12 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff0f5;
+            color: #333;
+            text-align: center;
+        }
         nav {
             background: #ffb6c1;
             padding: 15px;
@@ -46,64 +52,6 @@
         .social-links img:hover {
             transform: scale(1.1);
         }
-        .toggle-switch {
-            display: block;
-            margin: 20px auto;
-        }
-        .toggle-switch input {
-            display: none;
-        }
-        .toggle-switch .slider {
-            display: inline-block;
-            width: 50px;
-            height: 25px;
-            background: #ddd;
-            border-radius: 25px;
-            position: relative;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .toggle-switch input:checked + .slider {
-            background: #ff69b4;
-        }
-        .toggle-switch .slider::before {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: white;
-            border-radius: 50%;
-            top: 50%;
-            left: 3px;
-            transform: translateY(-50%);
-            transition: 0.3s;
-        }
-        .toggle-switch input:checked + .slider::before {
-            left: 27px;
-        }
-        form {
-            display: none;
-            margin-top: 20px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .btn {
-            background: #ff69b4;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #ff1493;
-        }
     </style>
 </head>
 <body>
@@ -124,31 +72,6 @@
                 <img src="images/whatsapp.png" alt="WhatsApp">
             </a>
         </div>
-
-        <label class="toggle-switch">
-            <input type="checkbox" id="queryToggle">
-            <span>Reach us!</span>
-            <span class="slider"></span>
-        </label>
-
-        <form id="queryForm">
-            <textarea id="userQuery" placeholder="Your Query" required></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
     </div>
-
-    <script>
-        document.getElementById("queryToggle").addEventListener("change", function() {
-            const form = document.getElementById("queryForm");
-            form.style.display = this.checked ? "block" : "none";
-        });
-
-        document.getElementById("queryForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            const email = document.getElementById("userEmail").value;
-            const query = document.getElementById("userQuery").value;
-            window.location.href = `mailto:nishisheeba196@gmail.com?subject=Customer Query&body=Email: ${email}%0D%0AQuery: ${query}`;
-        });
-    </script>
 </body>
 </html>
