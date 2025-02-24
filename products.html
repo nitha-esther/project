@@ -50,15 +50,19 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .product-card {
-            background: #fff;
-            padding: 15px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 15px;
-            display: inline-block;
-            text-align: center;
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 0 auto;
         }
+
+        .product-card {
+            width: 48%;
+            box-sizing: border-box;
+        }
+
         .buy-now {
             background: #ff69b4;
             border: none;
@@ -84,81 +88,83 @@
         </div>
     </nav>
     <section class="products">
-        <div class="product-card">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/handpainting-1.jpeg" alt="Hand painting"></div>
-                    <div class="swiper-slide"><img src="images/handpainting-2.jpeg" alt="Hand painting"></div>
+        <div class="products-container">
+            <div class="product-card">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/handpainting-1.jpeg" alt="Hand painting"></div>
+                        <div class="swiper-slide"><img src="images/handpainting-2.jpeg" alt="Hand painting"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
         
-            <h2>Hand painting</h2>
-            <p>Price: <span>499/- </span></p>
-            <button class="buy-now" onclick="buyNow('Handpainting')">Buy Now</button>
-        </div>    
+                <h2>Hand painting</h2>
+                <p>Price: <span>499/- </span></p>
+                <button class="buy-now" onclick="buyNow('Handpainting')">Buy Now</button>
+            </div>    
 
-        <div class="product-card">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/minimal-1.jpg" alt="Product 2-1"></div>
-                    <div class="swiper-slide"><img src="images/minimal-2.jpg" alt="Product 2-2"></div>
+            <div class="product-card">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/minimal-1.jpg" alt="Product 2-1"></div>
+                        <div class="swiper-slide"><img src="images/minimal-2.jpg" alt="Product 2-2"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            
+                <h2>Minimal-digital art</h2>
+                <p>Price: <span>399-499</span></p>
+                <button class="buy-now" onclick="buyNow('Minimal-digital art')">Buy Now</button>
             </div>
-        
-            <h2>Minimal-digital art</h2>
-            <p>Price: <span>399-499</span></p>
-            <button class="buy-now" onclick="buyNow('Minimal-digital art')">Buy Now</button>
-        </div>
-        <div class="product-card">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/polaroid-1.jpeg" alt="Polaroid"></div>
-                    <div class="swiper-slide"><img src="images/polaroid-2.jpeg" alt="Polaroid"></div>
+            <div class="product-card">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/polaroid-1.jpeg" alt="Polaroid"></div>
+                        <div class="swiper-slide"><img src="images/polaroid-2.jpeg" alt="Polaroid"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
         
-            <h2>Polaroid - Hand painting</h2>
-            <p>Price: <span>499/- </span></p>
-            <button class="buy-now" onclick="buyNow('Polaroid')">Buy Now</button>
-        </div>
-        <div class="product-card">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/bookmark-1.jpeg" alt="Bookmark"></div>
-                    <div class="swiper-slide"><img src="images/polaroid-2.jpeg" alt="Bookmark"></div>
+                <h2>Polaroid - Hand painting</h2>
+                <p>Price: <span>499/- </span></p>
+                <button class="buy-now" onclick="buyNow('Polaroid')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/bookmark-1.jpeg" alt="Bookmark"></div>
+                        <div class="swiper-slide"><img src="images/polaroid-2.jpeg" alt="Bookmark"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            
+                <h2>Bookmark - Hand painting</h2>
+                <p>Price: <span>299/- </span></p>
+                <button class="buy-now" onclick="buyNow('Bookmark')">Buy Now</button>
             </div>
-        
-            <h2>Bookmark - Hand painting</h2>
-            <p>Price: <span>299/- </span></p>
-            <button class="buy-now" onclick="buyNow('Bookmark')">Buy Now</button>
-        </div>
-        <div class="product-card">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/canvas-1.jpg" alt="canvas"></div>
-                    <div class="swiper-slide"><img src="images/polaroid-2.jpeg" alt="canvas"></div>
+            <div class="product-card">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/canvas-1.jpg" alt="canvas"></div>
+                        <div class="swiper-slide"><img src="images/polaroid-2.jpeg" alt="canvas"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            
+                <h2>canvas - Hand painting</h2>
+                <p>Price: <span>599/- </span></p>
+                <button class="buy-now" onclick="buyNow('canvas')">Buy Now</button>
             </div>
-        
-            <h2>canvas - Hand painting</h2>
-            <p>Price: <span>599/- </span></p>
-            <button class="buy-now" onclick="buyNow('canvas')">Buy Now</button>
         </div>     
     </section>
     <script>
